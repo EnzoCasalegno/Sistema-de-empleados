@@ -6,18 +6,18 @@
         <h3>Agregar empleado</h3>
     </div>
 
-    <form>
+    <form action="${urlAgregar}" modelAttribute="empleadoForma" method="post">
         <div class="mb-3">
-            <label for="nombre" class="form-label">Email address</label>
-            <input type="text" class="form-control" id="nombre" required="true">
+            <label for="nombreEmpleado" class="form-label">Nombre Apellido</label>
+            <input type="text" class="form-control" id="nombreEmpleado" name="nombreEmpleado" required="true">
         </div>
         <div class="mb-3">
             <label for="departamento" class="form-label">Departamento</label>
-            <input type="text" class="form-control" id="departamento">
+            <input type="text" class="form-control" name="departamento" id="departamento">
         </div>
         <div class="mb-3">
-            <label for="sueldo" class="form-label">Departamento</label>
-            <input type="number" step="any" class="form-control" id="sueldo">
+            <label for="sueldo" class="form-label">Sueldo</label>
+            <input type="number" step="any" class="form-control" name="sueldo" id="sueldo">
         </div>
 
         <div class="text-center">
